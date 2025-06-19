@@ -1,0 +1,94 @@
+.linesBorderBox {
+	background-image: repeating-linear-gradient(
+			1deg,
+			#333333,
+			#333333 15px,
+			transparent 15px,
+			transparent 26px,
+			#333333 26px
+		),
+		repeating-linear-gradient(
+			91deg,
+			#333333,
+			#333333 15px,
+			transparent 15px,
+			transparent 26px,
+			#333333 26px
+		),
+		repeating-linear-gradient(
+			181deg,
+			#333333,
+			#333333 15px,
+			transparent 15px,
+			transparent 26px,
+			#333333 26px
+		),
+		repeating-linear-gradient(
+			271deg,
+			#333333,
+			#333333 15px,
+			transparent 15px,
+			transparent 26px,
+			#333333 26px
+		);
+	background-size:
+		1px 100%,
+		100% 1px,
+		1px 100%,
+		100% 1px;
+	background-position:
+		0 0,
+		0 0,
+		100% 0,
+		0 100%;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0);
+}
+.linesBorderBoxYellow {
+	background-image: repeating-linear-gradient(
+			1deg,
+			#f3f305,
+			#f3f305 15px,
+			transparent 15px,
+			transparent 26px,
+			#f3f305 26px
+		),
+		repeating-linear-gradient(
+			91deg,
+			#f3f305,
+			#f3f305 15px,
+			transparent 15px,
+			transparent 26px,
+			#f3f305 26px
+		),
+		repeating-linear-gradient(
+			181deg,
+			#f3f305,
+			#f3f305 15px,
+			transparent 15px,
+			transparent 26px,
+			#f3f305 26px
+		),
+		repeating-linear-gradient(
+			271deg,
+			#f3f305,
+			#f3f305 15px,
+			transparent 15px,
+			transparent 26px,
+			#f3f305 26px
+		);
+	background-size:
+		1px 100%,
+		100% 1px,
+		1px 100%,
+		100% 1px;
+	background-position:
+		0 0,
+		0 0,
+		100% 0,
+		0 100%;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0);
+}

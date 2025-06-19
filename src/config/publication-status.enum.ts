@@ -1,0 +1,6 @@
+export enum PublicationStatus {
+	IN_PROGRESS = 'IN_PROGRESS',
+	PUBLISHED = 'PUBLISHED',
+	UNPUBLISHED = 'UNPUBLISHED',
+	ERROR = 'ERROR'
+}

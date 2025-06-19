@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* https://tailwindcss.com/docs/font-weight */
+@font-face {
+	font-family: 'neue-haas-display';
+	src: url('/fonts/neue-haas-display-semibold-600.eot');
+	src:
+		local('neue-haas-display-semibold-600'),
+		url('/fonts/neue-haas-display-semibold-600.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/neue-haas-display-semibold-600.woff2') format('woff2'),
+		url('/fonts/neue-haas-display-semibold-600.woff') format('woff'),
+		url('/fonts/neue-haas-display-semibold-600.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sf-ui-display';
+	src: url('/fonts/sf-ui-display-thin-300.eot');
+	src:
+		local('sf-ui-display-thin-300'),
+		url('/fonts/sf-ui-display-thin-300.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/sf-ui-display-thin-300.woff2') format('woff2'),
+		url('/fonts/sf-ui-display-thin-300.woff') format('woff'),
+		url('/fonts/sf-ui-display-thin-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sf-ui-display';
+	src: url('/fonts/sf-ui-display-light-400.eot');
+	src:
+		local('sf-ui-display-light-400'),
+		url('/fonts/sf-ui-display-light-400.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/sf-ui-display-light-400.woff2') format('woff2'),
+		url('/fonts/sf-ui-display-light-400.woff') format('woff'),
+		url('/fonts/sf-ui-display-light-400.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sf-ui-display';
+	src: url('/fonts/sf-ui-display-medium-500.eot');
+	src:
+		local('sf-ui-display-medium-500'),
+		url('/fonts/sf-ui-display-medium-500.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/sf-ui-display-medium-500.woff2') format('woff2'),
+		url('/fonts/sf-ui-display-medium-500.woff') format('woff'),
+		url('/fonts/sf-ui-display-medium-500.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@layer base {
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+	transition:
+		background-color 0s 600000s,
+		color 0s 600000s !important;
+}
+
+.nav-item-active {
+	border-bottom: 2px solid white;
+	border-radius: 1px;
+}
+
+.toastify-progress-bar {
+	background-color: #00e0ca !important;
+}
+
+.toastify-body {
+	font-size: 14px !important;
+}
+
+/* Webkit-based browsers (Chrome, Safari, Opera) */
+.scrollbar-custom::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+	background-color: #4a4a4a; /* Dark grey color */
+	border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+	background: #2e2e2e; /* Dark background for the track */
+}
+
+/* Firefox */
+.scrollbar-custom {
+	scrollbar-width: thin;
+	scrollbar-color: #4a4a4a #2e2e2e;
+}

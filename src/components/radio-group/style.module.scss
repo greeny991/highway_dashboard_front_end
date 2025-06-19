@@ -1,0 +1,47 @@
+.radioGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	.radioLabel {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		position: relative;
+	}
+
+	.radioInput {
+		position: absolute;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.radioCustom {
+		width: 20px;
+		height: 20px;
+		border: 2px solid #4c4c4c;
+		border-radius: 50%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.radioCustom::before {
+		content: '';
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #00e6df;
+		opacity: 0;
+		transition: opacity 0.2s;
+	}
+
+	.radioInput:checked + .radioCustom::before {
+		opacity: 1;
+	}
+
+	.checked {
+		border: 2px solid #00e6df !important;
+	}
+}

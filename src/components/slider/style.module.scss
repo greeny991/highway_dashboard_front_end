@@ -1,0 +1,12 @@
+.images {
+	:global .slick-slider,
+	:global .slick-slide > div,
+	:global .slick-list,
+	:global .slick-track,
+	:global .slick-track {
+		height: 100%;
+	}
+}
+.text {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
